@@ -5,6 +5,7 @@ cc._RF.push(module, '3cf24oT0/lMQIv3m6xHZVMH', 'WaveMng');
 'use strict';
 
 var Emitter = require('Emitter');
+var mEmitter = require('../Emitter');
 cc.Class({
     extends: cc.Component,
 
@@ -118,6 +119,11 @@ cc.Class({
             } else {
                 if (this._levelIndex === 3) {
                     this.waveLabel.node.active = false;
+                    cc.tween(this.node).delay(3).call(function () {
+                        cc.director.loadScene('Menu', function () {
+                            mEmitter.instance.emit('changeScreen', 'wingame');
+                        });
+                    }).start();
                 } else {
                     this.waveLabel.node.active = false;
                     var finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0);

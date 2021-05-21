@@ -555,8 +555,8 @@
     "relativePath": "Font\\SfOuterLimitsExtupright-Bjdl.ttf"
   },
   "abf09b08-c692-458a-9e2b-7f345da3f2ca": {
-    "asset": 1621603904163,
-    "meta": 1621603904185,
+    "asset": 1621615000854,
+    "meta": 1621615000880,
     "relativePath": "Scene\\PlayGame.fire"
   },
   "9aec2a41-5422-481e-8b73-bdce73211e0c": {
@@ -610,7 +610,7 @@
     "relativePath": "Script\\Menu\\Setting.js"
   },
   "1afc2b61-615b-41c1-9854-47f65a4360cd": {
-    "asset": 1621596973569,
+    "asset": 1621611445515,
     "meta": 1621596973522,
     "relativePath": "Textures\\Background"
   },
@@ -800,7 +800,7 @@
     "relativePath": "Script\\scrollingbg.js"
   },
   "7fa0d969-93b8-493a-bcd0-4775100f0aa3": {
-    "asset": 1621596973507,
+    "asset": 1621611144476,
     "meta": 1621596973507,
     "relativePath": "Script\\Menu"
   },
@@ -859,11 +859,6 @@
     "meta": 1621606392008,
     "relativePath": "Textures\\Player\\explode.png"
   },
-  "3cf24a13-d3f9-4c40-8bf7-9bac47655307": {
-    "asset": 1621607181248,
-    "meta": 1621607183542,
-    "relativePath": "Script\\Actor\\WaveMng.js"
-  },
   "1f00b5a3-7321-40e3-9e0f-0c54e79c79e8": {
     "asset": 1621607582673,
     "meta": 1621607597644,
@@ -899,14 +894,19 @@
     "meta": 1621613391777,
     "relativePath": "Script\\Menu\\MainControllerMenu.js"
   },
-  "9faa7e73-9141-470c-9315-ee6717a2d907": {
-    "asset": 1621614056696,
-    "meta": 1621614058040,
-    "relativePath": "Script\\Actor\\Player.js"
-  },
   "1710adb6-3957-43d0-9ef5-f56dc6928782": {
     "asset": 1621614527917,
     "meta": 1621614530222,
     "relativePath": "Script\\ChooseLevel\\ChooseLevel.js"
+  },
+  "3cf24a13-d3f9-4c40-8bf7-9bac47655307": {
+    "asset": 1621614812518,
+    "meta": 1621614815883,
+    "relativePath": "Script\\Actor\\WaveMng.js"
+  },
+  "9faa7e73-9141-470c-9315-ee6717a2d907": {
+    "asset": 1621614981434,
+    "meta": 1621614999434,
+    "relativePath": "Script\\Actor\\Player.js"
   }
 }

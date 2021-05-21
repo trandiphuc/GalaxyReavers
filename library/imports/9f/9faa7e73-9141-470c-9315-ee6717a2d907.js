@@ -37,7 +37,6 @@ cc.Class({
     die: function die() {
         var _this = this;
 
-        cc.log(this.node.parent);
         var level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
         cc.tween(this.node).call(function () {
             _this.node.getComponent(cc.Sprite).spriteFrame = _this.explodeFx;
@@ -49,13 +48,6 @@ cc.Class({
             });
             _this.node.destroy();
         }).start();
-
-        // cc.director.loadScene("Menu", (()=>{
-        //     mEmitter.instance.emit('changeScreen', 'gameover');
-        //     let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
-        //     getLevelScore.setLevel(level);
-        // }));
-        // this.node.destroy();
     },
     update: function update(dt) {
         var currentPos = this.node.position;

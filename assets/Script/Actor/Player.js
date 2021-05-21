@@ -33,7 +33,6 @@ cc.Class({
     },
 
     die() {
-        cc.log(this.node.parent);
         let level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
         cc.tween(this.node)
             .call(() => {
@@ -49,13 +48,6 @@ cc.Class({
                 this.node.destroy();
             })
             .start();
-
-        // cc.director.loadScene("Menu", (()=>{
-        //     mEmitter.instance.emit('changeScreen', 'gameover');
-        //     let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
-        //     getLevelScore.setLevel(level);
-        // }));
-        // this.node.destroy();
     },
 
     update(dt) {

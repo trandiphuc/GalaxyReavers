@@ -1,4 +1,5 @@
 const Emitter = require('Emitter');
+const mEmitter = require('../Emitter');
 cc.Class({
     extends: cc.Component,
 
@@ -123,7 +124,14 @@ cc.Class({
             } else {
                 if (this._levelIndex === 3) {
                     this.waveLabel.node.active = false;
-        
+                    cc.tween(this.node)
+                        .delay(3)
+                        .call(()=>{
+                            cc.director.loadScene('Menu', (()=>{
+                                mEmitter.instance.emit('changeScreen', 'wingame');
+                            }))
+                        })
+                        .start();
                 } else {
                     this.waveLabel.node.active = false;
                     let finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0)
