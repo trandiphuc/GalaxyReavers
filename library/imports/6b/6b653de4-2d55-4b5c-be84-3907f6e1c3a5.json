@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "saohoa",
+    "texture": "49494049-11fb-4d81-ad70-d45de4314669",
+    "atlas": "",
+    "rect": [
+      3,
+      30,
+      432,
+      364
+    ],
+    "offset": [
+      -19.5,
+      -11.5
+    ],
+    "originalSize": [
+      477,
+      401
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

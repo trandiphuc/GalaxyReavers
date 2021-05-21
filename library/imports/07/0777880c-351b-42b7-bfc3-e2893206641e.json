@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "phihanhgiaTeemo",
+    "texture": "d0688a85-241c-45ae-b3ec-460305d4a2b3",
+    "atlas": "",
+    "rect": [
+      221,
+      9,
+      329,
+      298
+    ],
+    "offset": [
+      52.5,
+      29.5
+    ],
+    "originalSize": [
+      666,
+      375
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

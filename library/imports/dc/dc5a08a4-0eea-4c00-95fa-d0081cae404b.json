@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "buttonRota",
+    "texture": "e2e7a784-b954-487d-a6fd-784d454b3589",
+    "atlas": "",
+    "rect": [
+      65,
+      9,
+      1073,
+      1187
+    ],
+    "offset": [
+      1.5,
+      -2.5
+    ],
+    "originalSize": [
+      1200,
+      1200
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

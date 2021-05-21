@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lazeXanh",
+    "texture": "bf251098-bebd-40f3-b2fb-1d5b5aa2c67c",
+    "atlas": "",
+    "rect": [
+      28,
+      391,
+      1406,
+      855
+    ],
+    "offset": [
+      -19,
+      -68.5
+    ],
+    "originalSize": [
+      1500,
+      1500
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "phihanhgia",
+    "texture": "60bbc8c5-ba75-403a-9066-43456fabd121",
+    "atlas": "",
+    "rect": [
+      109,
+      25,
+      415,
+      362
+    ],
+    "offset": [
+      -6,
+      -12.5
+    ],
+    "originalSize": [
+      645,
+      387
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

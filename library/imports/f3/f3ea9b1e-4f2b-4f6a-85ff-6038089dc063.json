@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bluegalaxy",
+    "texture": "7eb7cf47-6c88-4213-9780-e636ebde7c88",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      900,
+      1920
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      900,
+      1920
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -2,16 +2,20 @@
 cc._RF.push(module, '9faa75zkUFHDJMV7mcXotkH', 'Player');
 // Script/Actor/Player.js
 
-'use strict';
+"use strict";
+
+var mEmitter = require("Emitter");
 
 cc.Class({
     extends: cc.Component,
 
     properties: {
-        maxSpeed: 10
+        maxSpeed: 10,
+        level: ""
     },
 
     onLoad: function onLoad() {
+        this.level = this.node._parent.name;
         this._tmpPos = this.node.position;
         cc.Canvas.instance.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
         cc.Canvas.instance.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
@@ -30,6 +34,12 @@ cc.Class({
         }
     },
     die: function die() {
+        var level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
+        cc.director.loadScene("Menu", function () {
+            mEmitter.instance.emit('changeScreen', 'gameover');
+            var getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+            getLevelScore.setLevel(level);
+        });
         this.node.destroy();
     },
     update: function update(dt) {

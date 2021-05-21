@@ -16,13 +16,11 @@ cc.Class({
         enemy_prefab: {
             default: [],
             type: cc.Prefab
-        }
+        },
+        isblock: true
     },
 
-    // LIFE-CYCLE CALLBACKS:
-
     onLoad: function onLoad() {
-        this._levelIndex = 1;
         Emitter.instance.registerEvent('enemy_destroy', this.countEnemyAlive.bind(this));
         cc.loader.loadRes('waveConfig.json', function (err, object) {
             if (err) {
@@ -40,6 +38,12 @@ cc.Class({
         this._waveIndex = 1;
         this.createAWave();
     },
+    setLevelIndex: function setLevelIndex(value) {
+        this._levelIndex = value;
+    },
+    getLevelIndex: function getLevelIndex() {
+        return this._levelIndex;
+    },
     createAWave: function createAWave() {
         var lv = this._content[this._waveIndex].content.map(function (x) {
             return x;
@@ -53,28 +57,46 @@ cc.Class({
                 var newEnemy = cc.instantiate(this.enemy_prefab[0]);
                 var timeInterval = this.getRandom(1, 20);
                 newEnemy.getChildByName('weapon').getComponent('EnemyWeapon').interval = timeInterval;
-                var newX = col * 50 - 50 * lv_col / 2 + 25;
-                var newY = 200 + 50 * row;
+                var newX = col * 100 - 100 * lv_col / 2 + 50;
+                var newY = 300 + 120 * row;
                 newEnemy.setPosition(newX, newY);
                 this.node.addChild(newEnemy);
             } else if (lv[i] == '2') {
                 this._enemyCount++;
                 var _newEnemy = cc.instantiate(this.enemy_prefab[1]);
-                var _newX = col * 50 - 50 * lv_col / 2 + 25;
-                var _newY = 200 + 50 * row;
+                var _newX = col * 100 - 100 * lv_col / 2 + 50;
+                var _newY = 300 + 120 * row;
                 _newEnemy.setPosition(_newX, _newY);
                 this.node.addChild(_newEnemy);
+            } else if (lv[i] == '3') {
+                this._enemyCount++;
+                var _newEnemy2 = cc.instantiate(this.enemy_prefab[2]);
+                var _newX2 = 0;
+                var _newY2 = 400;
+                _newEnemy2.setPosition(_newX2, _newY2);
+                this.node.addChild(_newEnemy2);
             }
         }
-        cc.log(this._enemyCount);
     },
     countEnemyAlive: function countEnemyAlive() {
+        var _this = this;
+
         this._enemyCount--;
         if (this._enemyCount == 0) {
             this._waveIndex++;
             if (this._waveIndex <= this._content.num_wave) {
                 this.scheduleOnce(this.createAWave, 3);
-            } else cc.log('win oi');
+            } else {
+                if (this._levelIndex === 3) {
+                    //To do TRanform Screen Win
+                } else {
+                    this.isblock = false;
+                    cc.director.loadScene('ChooseLevel', function () {
+                        var getBlock = cc.director.getScene().getChildByName('Canvas').getChildByName('Level').getComponent('ChooseLevel');
+                        getBlock.setIsBlock(_this.isblock);
+                    });
+                }
+            };
         };
     },
     start: function start() {}

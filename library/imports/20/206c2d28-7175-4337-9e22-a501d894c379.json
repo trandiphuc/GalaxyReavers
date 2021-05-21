@@ -22,17 +22,20 @@
       }
     ],
     "_active": true,
-    "_level": 4,
+    "_level": 1,
     "_components": [
       {
         "__id__": 6
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 8
       }
     ],
     "_prefab": {
-      "__id__": 8
+      "__id__": 9
     },
     "_opacity": 255,
     "_color": {
@@ -44,8 +47,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 438,
-      "height": 451
+      "width": 351,
+      "height": 408
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -54,7 +57,7 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 14.262,
+      "x": 0,
       "y": 474.227,
       "z": 0
     },
@@ -211,7 +214,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "3b14a599-3b93-4cb5-97d9-335fc05844c2"
+      "__uuid__": "e48ed7f6-34fb-4b17-abf4-ae131504d50a"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -225,6 +228,59 @@
     "_fillRange": 0,
     "_isTrimmedMode": true,
     "_atlas": null,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.PolygonCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "points": [
+      {
+        "__type__": "cc.Vec2",
+        "x": -128,
+        "y": -196
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 0,
+        "y": -132
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 126,
+        "y": -202
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 174,
+        "y": 7
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": 70,
+        "y": 206
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": -88,
+        "y": 196
+      },
+      {
+        "__type__": "cc.Vec2",
+        "x": -172,
+        "y": 2
+      }
+    ],
     "_id": ""
   },
   {

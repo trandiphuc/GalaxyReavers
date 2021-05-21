@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "bosslevel1",
+    "texture": "8e9d1971-eeda-44de-9cb9-446fea21b50d",
+    "atlas": "",
+    "rect": [
+      97,
+      26,
+      351,
+      408
+    ],
+    "offset": [
+      0.5,
+      -0.5
+    ],
+    "originalSize": [
+      544,
+      459
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,11 +1,15 @@
+const mEmitter = require("Emitter");
+
 cc.Class({
     extends: cc.Component,
 
     properties: {
         maxSpeed: 10,
+        level: "",
     },
 
     onLoad() {
+        this.level = this.node._parent.name;
         this._tmpPos = this.node.position;
         cc.Canvas.instance.node.on(cc.Node.EventType.TOUCH_MOVE, this.onTouchMove, this);
         cc.Canvas.instance.node.on(cc.Node.EventType.TOUCH_END, this.onTouchEnd, this);
@@ -28,9 +32,15 @@ cc.Class({
     },
 
     die() {
+        let level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
+        cc.director.loadScene("Menu", (()=>{
+            mEmitter.instance.emit('changeScreen', 'gameover');
+            let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+            getLevelScore.setLevel(level);
+        }));
         this.node.destroy();
     },
-
+    
     update(dt) {
         let currentPos = this.node.position;
         let delta = this._tmpPos.sub(currentPos);

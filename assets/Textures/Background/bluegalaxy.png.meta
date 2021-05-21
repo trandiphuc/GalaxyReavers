@@ -1,6 +1,6 @@
 {
   "ver": "2.3.3",
-  "uuid": "2dc0698f-468b-4c95-812a-0d1eaf097d9d",
+  "uuid": "7eb7cf47-6c88-4213-9780-e636ebde7c88",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
@@ -11,8 +11,8 @@
   "subMetas": {
     "bluegalaxy": {
       "ver": "1.0.4",
-      "uuid": "2cde87c0-0fe5-478b-95fb-f711f83b0a2b",
-      "rawTextureUuid": "2dc0698f-468b-4c95-812a-0d1eaf097d9d",
+      "uuid": "f3ea9b1e-4f2b-4f6a-85ff-6038089dc063",
+      "rawTextureUuid": "7eb7cf47-6c88-4213-9780-e636ebde7c88",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,

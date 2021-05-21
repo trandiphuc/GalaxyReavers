@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "losegame",
+    "texture": "09528f07-56df-4cb3-88cc-afded01fe649",
+    "atlas": "",
+    "rect": [
+      40,
+      17,
+      396,
+      347
+    ],
+    "offset": [
+      -9,
+      -2.5
+    ],
+    "originalSize": [
+      494,
+      376
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "ver": "2.3.3",
+  "uuid": "6225e3e9-b4fb-43c8-a3fd-214708b5ad96",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "platformSettings": {},
+  "subMetas": {
+    "LazeRed": {
+      "ver": "1.0.4",
+      "uuid": "f560933a-4cae-43f9-ab8b-b7afb4db3d7e",
+      "rawTextureUuid": "6225e3e9-b4fb-43c8-a3fd-214708b5ad96",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 251,
+      "height": 144,
+      "rawWidth": 251,
+      "rawHeight": 144,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

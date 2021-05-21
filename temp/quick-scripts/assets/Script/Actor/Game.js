@@ -26,6 +26,7 @@ cc.Class({
     },
     start: function start() {
         var player = cc.instantiate(this.player[this.index]);
+        player.y = -300;
         this.node.addChild(player);
     }
 }

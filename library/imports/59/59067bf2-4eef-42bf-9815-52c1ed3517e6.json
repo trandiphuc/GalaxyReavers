@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "toggle",
+    "texture": "5482ff77-8bb0-4c92-91ae-c6ec6436e234",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      312,
+      311
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      312,
+      311
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

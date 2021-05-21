@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "tuonglai",
+    "texture": "e459fb0c-6300-40dc-8088-69fd8aa6ea11",
+    "atlas": "",
+    "rect": [
+      101,
+      48,
+      338,
+      345
+    ],
+    "offset": [
+      -12,
+      -9
+    ],
+    "originalSize": [
+      564,
+      423
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

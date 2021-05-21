@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "LazeRed",
+    "texture": "6225e3e9-b4fb-43c8-a3fd-214708b5ad96",
+    "atlas": "",
+    "rect": [
+      0,
+      0,
+      251,
+      144
+    ],
+    "offset": [
+      0,
+      0
+    ],
+    "originalSize": [
+      251,
+      144
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

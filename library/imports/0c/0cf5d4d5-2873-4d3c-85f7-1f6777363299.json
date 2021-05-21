@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "saothuy",
+    "texture": "1db6e20a-0891-4bf5-86ee-64956de0369c",
+    "atlas": "",
+    "rect": [
+      42,
+      35,
+      450,
+      380
+    ],
+    "offset": [
+      0,
+      9
+    ],
+    "originalSize": [
+      534,
+      468
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
