@@ -7,7 +7,6 @@ cc.Class({
         loseGame: cc.Node,
         homeButton: cc.Button,
         levelLabel: cc.Label,
-        waveLabel: cc.Label,
         replayButton: cc.Button,
         level: 0,
         wave: 0,
@@ -41,7 +40,6 @@ cc.Class({
 
     start() {
         this.levelLabel.string = "Level " + this.level;
-        this.waveLabel.string = this.wave;
     },
 
     // update (dt) {},

@@ -209,6 +209,9 @@
     "_enabled": true,
     "maxSpeed": 1000,
     "level": "",
+    "explodeFx": {
+      "__uuid__": "e9e03ff3-a8fc-41b4-9584-ba8a18671372"
+    },
     "_id": ""
   },
   {

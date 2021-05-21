@@ -20,7 +20,6 @@ cc.Class({
 
     onLoad() {
         this.finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0);
-        cc.log(this.finishedLevel);
         switch (this.finishedLevel) {
             case 1: this.level2Button.interactable = true;
                 break;
@@ -90,28 +89,35 @@ cc.Class({
     goToLevel2() {
         this.level = 2;
         this.player.runAction(cc.sequence(
-            cc.rotateTo(0.5, 335),
+            cc.moveTo(1, cc.v2(this.player.x, 1000)),
+            cc.moveTo(0.1, cc.v2(this.level2Button.node.x, 1000)),
+            cc.rotateTo(0.1, 180),
             cc.spawn(
                 cc.scaleTo(1, 0.4),
                 cc.moveTo(1, cc.v2(this.level2Button.node.x, this.level2Button.node.y))
             ),
-            cc.rotateTo(1, 0)
+            cc.rotateTo(1, 0),
+            cc.callFunc(()=>{
+                this.goToGame();
+            })
         ));
-        this.goToGame();
     },
 
     goToLevel3() {
         this.level = 3;
-        this.level3Button.interactable = false;
         this.player.runAction(cc.sequence(
-            cc.rotateTo(0.5, 100),
+            cc.moveTo(1, cc.v2(this.player.x, 1000)),
+            cc.moveTo(0.1, cc.v2(this.level3Button.node.x, 1000)),
+            cc.rotateTo(0.1, 180),
             cc.spawn(
                 cc.scaleTo(1, 0.2),
                 cc.moveTo(1, cc.v2(this.level3Button.node.x, this.level3Button.node.y))
             ),
-            cc.rotateTo(1, 0)
+            cc.rotateTo(1, 0),
+            cc.callFunc(()=>{
+                this.goToGame();
+            })
         ));
-        this.goToGame();
     },
     goToGame() {
         cc.director.loadScene('PlayGame', (() => {

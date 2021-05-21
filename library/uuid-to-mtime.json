@@ -425,7 +425,7 @@
     "relativePath": "prefabs"
   },
   "da5f1258-d311-4add-8666-76aacdd0f98e": {
-    "asset": 1621596973663,
+    "asset": 1621603698170,
     "meta": 1621596973663,
     "relativePath": "prefabs\\bullet"
   },
@@ -465,7 +465,7 @@
     "relativePath": "prefabs\\enemy\\enemy1.prefab"
   },
   "d6c5c09c-67e9-4725-95fd-90c1d54cf7a1": {
-    "asset": 1621596973679,
+    "asset": 1621606404135,
     "meta": 1621596973663,
     "relativePath": "prefabs\\player"
   },
@@ -475,8 +475,8 @@
     "relativePath": "prefabs\\enemy\\enemy2.prefab"
   },
   "1f0458c8-4ee0-4ea2-9a0b-812551ed7f25": {
-    "asset": 1621607501760,
-    "meta": 1621607501771,
+    "asset": 1621613762765,
+    "meta": 1621613762782,
     "relativePath": "prefabs\\player\\redSpace.prefab"
   },
   "c77c014c-1c34-448c-bcea-066276ee7bd4": {
@@ -495,7 +495,7 @@
     "relativePath": "Script"
   },
   "67ac119c-c139-423d-b2cd-9703e4f14fb1": {
-    "asset": 1621597212099,
+    "asset": 1621605033407,
     "meta": 1621596973491,
     "relativePath": "Script\\Actor"
   },
@@ -585,13 +585,13 @@
     "relativePath": "Textures\\Enemy"
   },
   "d9a288fb-53a8-4bce-8453-f177c30c84e8": {
-    "asset": 1621601322315,
-    "meta": 1621601322374,
+    "asset": 1621614534722,
+    "meta": 1621614534741,
     "relativePath": "Scene\\ChooseLevel.fire"
   },
   "ef8a98ac-02db-4d4f-9f39-29da49b199ec": {
-    "asset": 1621607428472,
-    "meta": 1621607428532,
+    "asset": 1621613417290,
+    "meta": 1621613417322,
     "relativePath": "Scene\\Menu.fire"
   },
   "dca2af43-02ff-4a0a-9472-4381284ee410": {
@@ -630,7 +630,7 @@
     "relativePath": "Textures\\Enemy\\enemy.png"
   },
   "d4786782-bc5f-4fc7-bc74-0b1ef58db903": {
-    "asset": 1621596973663,
+    "asset": 1621606404135,
     "meta": 1621596973647,
     "relativePath": "Textures\\Player"
   },
@@ -799,11 +799,6 @@
     "meta": 1621597045906,
     "relativePath": "Script\\scrollingbg.js"
   },
-  "1ed0e3ce-3973-4446-b1d0-0f32fc6fd632": {
-    "asset": 1621596973507,
-    "meta": 1621597045871,
-    "relativePath": "Script\\Menu\\MainControllerMenu.js"
-  },
   "7fa0d969-93b8-493a-bcd0-4775100f0aa3": {
     "asset": 1621596973507,
     "meta": 1621596973507,
@@ -814,20 +809,10 @@
     "meta": 1621596973507,
     "relativePath": "Script\\ChooseLevel"
   },
-  "9faa7e73-9141-470c-9315-ee6717a2d907": {
-    "asset": 1621596973507,
-    "meta": 1621597045451,
-    "relativePath": "Script\\Actor\\Player.js"
-  },
   "cbae7594-dce1-490c-8bbb-f71ff9fd905e": {
     "asset": 1621599186705,
     "meta": 1621599188067,
     "relativePath": "Script\\Menu\\Home.js"
-  },
-  "209c400a-4d6c-477d-a58b-f2fd15be4946": {
-    "asset": 1621601631947,
-    "meta": 1621601693188,
-    "relativePath": "Script\\Menu\\GameOver.js"
   },
   "31a259cb-a146-472a-947d-b0c260a5cb80": {
     "asset": 1621603306248,
@@ -850,29 +835,19 @@
     "relativePath": "prefabs\\bullet\\bullet2.prefab"
   },
   "3445ea54-96a9-4f6c-a370-556129bd24c1": {
-    "asset": 1621607532895,
-    "meta": 1621607532905,
+    "asset": 1621613742665,
+    "meta": 1621613742675,
     "relativePath": "prefabs\\player\\blueSpace.prefab"
   },
   "1f5bad91-53a2-49eb-9058-f9e0cc565756": {
-    "asset": 1621604359582,
-    "meta": 1621604359592,
+    "asset": 1621613752936,
+    "meta": 1621613752955,
     "relativePath": "prefabs\\player\\lazeSpace.prefab"
   },
   "9a263db0-6eb7-4588-a73b-32936dbcebb2": {
     "asset": 1621604528478,
     "meta": 1621604644841,
     "relativePath": "resources\\waveConfig.json"
-  },
-  "1710adb6-3957-43d0-9ef5-f56dc6928782": {
-    "asset": 1621604959785,
-    "meta": 1621605033854,
-    "relativePath": "Script\\ChooseLevel\\ChooseLevel.js"
-  },
-  "b95770f5-d017-4254-9a31-dd290b552b07": {
-    "asset": 1621606146314,
-    "meta": 1621606150018,
-    "relativePath": "Script\\Actor\\Bullet.js"
   },
   "1f7d951d-b3fc-433c-aa6c-494f972878a6": {
     "asset": 1621606391940,
@@ -898,5 +873,40 @@
     "asset": 1621607687203,
     "meta": 1621607736692,
     "relativePath": "Script\\Actor\\Enemy.js"
+  },
+  "b95770f5-d017-4254-9a31-dd290b552b07": {
+    "asset": 1621609733533,
+    "meta": 1621609734206,
+    "relativePath": "Script\\Actor\\Bullet.js"
+  },
+  "4c89abe9-7374-44dd-a030-2024b3b0348f": {
+    "asset": 1621611445440,
+    "meta": 1621611445777,
+    "relativePath": "Textures\\Background\\flower.png"
+  },
+  "209c400a-4d6c-477d-a58b-f2fd15be4946": {
+    "asset": 1621611823134,
+    "meta": 1621611829092,
+    "relativePath": "Script\\Menu\\GameOver.js"
+  },
+  "bc508341-782f-4d75-9787-dd426f763e07": {
+    "asset": 1621613166776,
+    "meta": 1621613167654,
+    "relativePath": "Script\\Menu\\WinGame.js"
+  },
+  "1ed0e3ce-3973-4446-b1d0-0f32fc6fd632": {
+    "asset": 1621613387447,
+    "meta": 1621613391777,
+    "relativePath": "Script\\Menu\\MainControllerMenu.js"
+  },
+  "9faa7e73-9141-470c-9315-ee6717a2d907": {
+    "asset": 1621614056696,
+    "meta": 1621614058040,
+    "relativePath": "Script\\Actor\\Player.js"
+  },
+  "1710adb6-3957-43d0-9ef5-f56dc6928782": {
+    "asset": 1621614527917,
+    "meta": 1621614530222,
+    "relativePath": "Script\\ChooseLevel\\ChooseLevel.js"
   }
 }

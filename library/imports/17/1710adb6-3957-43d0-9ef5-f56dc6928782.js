@@ -26,7 +26,6 @@ cc.Class({
 
     onLoad: function onLoad() {
         this.finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0);
-        cc.log(this.finishedLevel);
         switch (this.finishedLevel) {
             case 1:
                 this.level2Button.interactable = true;
@@ -72,24 +71,29 @@ cc.Class({
         this.goToGame();
     },
     goToLevel2: function goToLevel2() {
+        var _this2 = this;
+
         this.level = 2;
-        this.player.runAction(cc.sequence(cc.rotateTo(0.5, 335), cc.spawn(cc.scaleTo(1, 0.4), cc.moveTo(1, cc.v2(this.level2Button.node.x, this.level2Button.node.y))), cc.rotateTo(1, 0)));
-        this.goToGame();
+        this.player.runAction(cc.sequence(cc.moveTo(1, cc.v2(this.player.x, 1000)), cc.moveTo(0.1, cc.v2(this.level2Button.node.x, 1000)), cc.rotateTo(0.1, 180), cc.spawn(cc.scaleTo(1, 0.4), cc.moveTo(1, cc.v2(this.level2Button.node.x, this.level2Button.node.y))), cc.rotateTo(1, 0), cc.callFunc(function () {
+            _this2.goToGame();
+        })));
     },
     goToLevel3: function goToLevel3() {
+        var _this3 = this;
+
         this.level = 3;
-        this.level3Button.interactable = false;
-        this.player.runAction(cc.sequence(cc.rotateTo(0.5, 100), cc.spawn(cc.scaleTo(1, 0.2), cc.moveTo(1, cc.v2(this.level3Button.node.x, this.level3Button.node.y))), cc.rotateTo(1, 0)));
-        this.goToGame();
+        this.player.runAction(cc.sequence(cc.moveTo(1, cc.v2(this.player.x, 1000)), cc.moveTo(0.1, cc.v2(this.level3Button.node.x, 1000)), cc.rotateTo(0.1, 180), cc.spawn(cc.scaleTo(1, 0.2), cc.moveTo(1, cc.v2(this.level3Button.node.x, this.level3Button.node.y))), cc.rotateTo(1, 0), cc.callFunc(function () {
+            _this3.goToGame();
+        })));
     },
     goToGame: function goToGame() {
-        var _this2 = this;
+        var _this4 = this;
 
         cc.director.loadScene('PlayGame', function () {
             var getLevel = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getChildByName('WaveManager').getComponent('WaveMng');
-            getLevel.setLevelIndex(_this2.level);
+            getLevel.setLevelIndex(_this4.level);
             var getIndex = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getComponent('Game');
-            getIndex.setIndex(_this2.index);
+            getIndex.setIndex(_this4.index);
         });
     },
     start: function start() {

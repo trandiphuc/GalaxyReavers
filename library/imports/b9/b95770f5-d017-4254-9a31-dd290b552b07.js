@@ -14,8 +14,8 @@ cc.Class({
         },
         damage: 0,
         sound: {
-            default: null,
-            url: cc.AudioClip
+            type: cc.AudioClip,
+            default: null
         }
     },
 

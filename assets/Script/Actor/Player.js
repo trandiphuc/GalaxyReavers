@@ -6,6 +6,7 @@ cc.Class({
     properties: {
         maxSpeed: 10,
         level: "",
+        explodeFx: cc.SpriteFrame,
     },
 
     onLoad() {
@@ -32,15 +33,31 @@ cc.Class({
     },
 
     die() {
+        cc.log(this.node.parent);
         let level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
-        cc.director.loadScene("Menu", (()=>{
-            mEmitter.instance.emit('changeScreen', 'gameover');
-            let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
-            getLevelScore.setLevel(level);
-        }));
-        this.node.destroy();
+        cc.tween(this.node)
+            .call(() => {
+                this.node.getComponent(cc.Sprite).spriteFrame = this.explodeFx;
+            })
+            .delay(1)
+            .call(() => {
+                cc.director.loadScene("Menu", (() => {
+                    mEmitter.instance.emit('changeScreen', 'gameover');
+                    let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+                    getLevelScore.setLevel(level);
+                }));
+                this.node.destroy();
+            })
+            .start();
+
+        // cc.director.loadScene("Menu", (()=>{
+        //     mEmitter.instance.emit('changeScreen', 'gameover');
+        //     let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+        //     getLevelScore.setLevel(level);
+        // }));
+        // this.node.destroy();
     },
-    
+
     update(dt) {
         let currentPos = this.node.position;
         let delta = this._tmpPos.sub(currentPos);

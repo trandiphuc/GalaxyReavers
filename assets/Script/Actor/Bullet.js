@@ -8,8 +8,8 @@ cc.Class({
         },
         damage: 0,
         sound: {
+            type: cc.AudioClip,
             default: null,
-            url: cc.AudioClip
         }
     },
 

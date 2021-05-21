@@ -8,6 +8,7 @@ cc.Class({
         settingScreen: cc.Node,
         intentScreen: cc.Node,
         gameOverScreen: cc.Node,
+        winGameScreen: cc.Node,
     },
 
     onLoad () {
@@ -21,6 +22,7 @@ cc.Class({
                 this.settingScreen.active = false;
                 this.intentScreen.active = false;
                 this.gameOverScreen.active = false;
+                this.winGameScreen.active = false;
                 break;
             }
             case 'setting':{
@@ -28,6 +30,7 @@ cc.Class({
                 this.homeScreen.active = false;
                 this.intentScreen.active = false;
                 this.gameOverScreen.active = false;
+                this.winGameScreen.active = false;
                 break;
             }
             case 'intent':{
@@ -35,10 +38,20 @@ cc.Class({
                 this.homeScreen.active = false;
                 this.settingScreen.active = false;
                 this.gameOverScreen.active = false;
+                this.winGameScreen.active = false;
                 break;
             }
             case 'gameover':{
                 this.gameOverScreen.active = true;
+                this.intentScreen.active = false;
+                this.homeScreen.active = false;
+                this.settingScreen.active = false;
+                this.winGameScreen.active = false;
+                break;
+            }
+            case 'wingame':{
+                this.winGameScreen.active = true;
+                this.gameOverScreen.active = false;
                 this.intentScreen.active = false;
                 this.homeScreen.active = false;
                 this.settingScreen.active = false;
