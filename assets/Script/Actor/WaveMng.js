@@ -4,7 +4,10 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
-        _levelIndex: 1,
+        _levelIndex:{
+            default: 1,
+            serializable: false,
+        },
         _content: null,
         _waveIndex: 0,
         _enemyCount: 0,

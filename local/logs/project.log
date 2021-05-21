@@ -1,76 +1,90 @@
-2021-05-21T16:41:32.772Z - normal: Load ~/.CocosCreator/settings.json
-2021-05-21T16:41:33.938Z - normal: Initializing Asset Database
-2021-05-21T16:41:33.941Z - normal: checking language setting...
-2021-05-21T16:41:33.941Z - normal: Language: en
-2021-05-21T16:41:35.485Z - success: preview server running at http://localhost:7456
-2021-05-21T16:41:35.489Z - success: protocol editor-framework registered
-2021-05-21T16:41:35.489Z - success: protocol app registered
-2021-05-21T16:41:35.489Z - success: protocol theme registered
-2021-05-21T16:41:35.490Z - success: protocol packages registered
-2021-05-21T16:41:35.490Z - success: protocol uuid registerred
-2021-05-21T16:41:35.490Z - success: protocol db registerred
-2021-05-21T16:41:35.490Z - success: protocol thumbnail registerred
-2021-05-21T16:41:35.490Z - success: protocol unpack registerred
-2021-05-21T16:41:35.490Z - success: protocol disable-commonjs registerred
-2021-05-21T16:41:36.154Z - normal: connected!
-2021-05-21T16:41:36.156Z - normal: Check project D:\Cocos\GalaxyReavers
-2021-05-21T16:41:36.159Z - normal: Initializing project D:\Cocos\GalaxyReavers
-2021-05-21T16:41:36.858Z - normal: Initializing Cocos2d
-2021-05-21T16:41:41.163Z - normal: Initializing engine extends
-2021-05-21T16:41:41.218Z - success: alipay-adapter loaded
-2021-05-21T16:41:41.244Z - success: asset-db-debugger loaded
-2021-05-21T16:41:41.255Z - success: baidu-adapter loaded
-2021-05-21T16:41:41.267Z - success: color-picker loaded
-2021-05-21T16:41:41.501Z - success: fb-audience-network loaded
-2021-05-21T16:41:41.641Z - success: fb-live-stream loaded
-2021-05-21T16:41:41.674Z - success: google-play-instant loaded
-2021-05-21T16:41:41.715Z - success: huawei-runtime loaded
-2021-05-21T16:41:42.646Z - success: cpk-publish loaded
-2021-05-21T16:41:42.653Z - success: jsb-adapter loaded
-2021-05-21T16:41:42.692Z - success: oppo-runtime loaded
-2021-05-21T16:41:42.711Z - success: package-manager loaded
-2021-05-21T16:41:42.964Z - success: qqplay-adapter loaded
-2021-05-21T16:41:42.984Z - success: runtime-dev-tools loaded
-2021-05-21T16:41:43.008Z - success: sdkbox loaded
-2021-05-21T16:41:43.028Z - success: tester loaded
-2021-05-21T16:41:43.046Z - success: ui-kit-preview-extra loaded
-2021-05-21T16:41:43.063Z - success: ui-kit-preview loaded
-2021-05-21T16:41:43.066Z - success: ui-kit loaded
-2021-05-21T16:41:43.131Z - success: vivo-runtime loaded
-2021-05-21T16:41:43.140Z - success: weapp-adapter loaded
-2021-05-21T16:41:43.150Z - success: xiaomi-adapter loaded
-2021-05-21T16:41:43.155Z - success: alipay-minigame loaded
-2021-05-21T16:41:43.236Z - success: assets loaded
-2021-05-21T16:41:43.239Z - success: builder loaded
-2021-05-21T16:41:43.799Z - success: cocos-services loaded
-2021-05-21T16:41:43.808Z - success: console loaded
-2021-05-21T16:41:43.871Z - success: fb-instant-games loaded
-2021-05-21T16:41:43.876Z - success: game-window loaded
-2021-05-21T16:41:43.878Z - success: google-instant-games loaded
-2021-05-21T16:41:43.886Z - success: hierarchy loaded
-2021-05-21T16:41:43.890Z - success: inspector loaded
-2021-05-21T16:41:43.892Z - success: keystore loaded
-2021-05-21T16:41:43.898Z - success: node-library loaded
-2021-05-21T16:41:43.899Z - success: package-asset loaded
-2021-05-21T16:41:43.900Z - success: preferences loaded
-2021-05-21T16:41:43.902Z - success: project-exporter loaded
-2021-05-21T16:41:43.905Z - success: project-importer loaded
-2021-05-21T16:41:43.909Z - success: project-settings loaded
-2021-05-21T16:41:43.915Z - success: scene loaded
-2021-05-21T16:41:43.916Z - success: simulator-debugger loaded
-2021-05-21T16:41:43.917Z - success: sprite-editor loaded
-2021-05-21T16:41:43.921Z - success: store loaded
-2021-05-21T16:41:43.928Z - success: timeline loaded
-2021-05-21T16:41:43.937Z - success: xiaomi-runtime loaded
-2021-05-21T16:41:50.274Z - info: Cocos Services load base data!
-2021-05-21T16:41:58.689Z - normal: Loading packages
-2021-05-21T16:41:58.697Z - normal: Watching packages
-2021-05-21T16:41:59.397Z - normal: Run Application
-2021-05-21T16:43:16.129Z - info: Only the prefab node "Boss2" and its child nodes are saved.
-2021-05-21T17:00:12.610Z - info: Only the prefab node "Boss3" and its child nodes are saved.
-2021-05-21T17:00:12.817Z - info: Only the prefab node "Boss3" and its child nodes are saved.
-2021-05-21T17:00:13.023Z - info: Only the prefab node "Boss3" and its child nodes are saved.
-2021-05-21T17:00:23.489Z - info: Only the prefab node "Boss3" and its child nodes are saved.
-2021-05-21T17:00:30.955Z - info: Only the prefab node "Boss2" and its child nodes are saved.
-2021-05-21T17:00:35.937Z - info: Only the prefab node "Boss1" and its child nodes are saved.
-2021-05-21T17:00:38.764Z - info: Only the prefab node "Boss1" and its child nodes are saved.
+2021-05-21T17:03:14.943Z - normal: Load ~/.CocosCreator/settings.json
+2021-05-21T17:03:16.126Z - normal: Initializing Asset Database
+2021-05-21T17:03:16.130Z - normal: checking language setting...
+2021-05-21T17:03:16.130Z - normal: Language: en
+2021-05-21T17:03:17.234Z - success: preview server running at http://localhost:7456
+2021-05-21T17:03:17.237Z - success: protocol editor-framework registered
+2021-05-21T17:03:17.237Z - success: protocol app registered
+2021-05-21T17:03:17.237Z - success: protocol theme registered
+2021-05-21T17:03:17.237Z - success: protocol packages registered
+2021-05-21T17:03:17.238Z - success: protocol uuid registerred
+2021-05-21T17:03:17.238Z - success: protocol db registerred
+2021-05-21T17:03:17.238Z - success: protocol thumbnail registerred
+2021-05-21T17:03:17.238Z - success: protocol unpack registerred
+2021-05-21T17:03:17.238Z - success: protocol disable-commonjs registerred
+2021-05-21T17:03:18.326Z - normal: connected!
+2021-05-21T17:03:18.328Z - normal: Check project D:\Cocos\GalaxyReavers
+2021-05-21T17:03:18.330Z - normal: Initializing project D:\Cocos\GalaxyReavers
+2021-05-21T17:03:18.920Z - normal: Initializing Cocos2d
+2021-05-21T17:03:20.677Z - normal: Initializing engine extends
+2021-05-21T17:03:20.719Z - success: alipay-adapter loaded
+2021-05-21T17:03:20.724Z - success: asset-db-debugger loaded
+2021-05-21T17:03:20.725Z - success: baidu-adapter loaded
+2021-05-21T17:03:20.726Z - success: color-picker loaded
+2021-05-21T17:03:21.177Z - success: fb-audience-network loaded
+2021-05-21T17:03:21.303Z - success: fb-live-stream loaded
+2021-05-21T17:03:21.315Z - success: google-play-instant loaded
+2021-05-21T17:03:21.329Z - success: huawei-runtime loaded
+2021-05-21T17:03:21.820Z - success: cpk-publish loaded
+2021-05-21T17:03:21.821Z - success: jsb-adapter loaded
+2021-05-21T17:03:21.828Z - success: oppo-runtime loaded
+2021-05-21T17:03:21.832Z - success: package-manager loaded
+2021-05-21T17:03:22.084Z - success: qqplay-adapter loaded
+2021-05-21T17:03:22.087Z - success: runtime-dev-tools loaded
+2021-05-21T17:03:22.092Z - success: sdkbox loaded
+2021-05-21T17:03:22.097Z - success: tester loaded
+2021-05-21T17:03:22.099Z - success: ui-kit-preview-extra loaded
+2021-05-21T17:03:22.102Z - success: ui-kit-preview loaded
+2021-05-21T17:03:22.105Z - success: ui-kit loaded
+2021-05-21T17:03:22.122Z - success: vivo-runtime loaded
+2021-05-21T17:03:22.123Z - success: weapp-adapter loaded
+2021-05-21T17:03:22.124Z - success: xiaomi-adapter loaded
+2021-05-21T17:03:22.128Z - success: alipay-minigame loaded
+2021-05-21T17:03:22.216Z - success: assets loaded
+2021-05-21T17:03:22.219Z - success: builder loaded
+2021-05-21T17:03:22.640Z - success: cocos-services loaded
+2021-05-21T17:03:22.647Z - success: console loaded
+2021-05-21T17:03:22.698Z - success: fb-instant-games loaded
+2021-05-21T17:03:22.702Z - success: game-window loaded
+2021-05-21T17:03:22.703Z - success: google-instant-games loaded
+2021-05-21T17:03:22.710Z - success: hierarchy loaded
+2021-05-21T17:03:22.714Z - success: inspector loaded
+2021-05-21T17:03:22.716Z - success: keystore loaded
+2021-05-21T17:03:22.723Z - success: node-library loaded
+2021-05-21T17:03:22.725Z - success: package-asset loaded
+2021-05-21T17:03:22.726Z - success: preferences loaded
+2021-05-21T17:03:22.728Z - success: project-exporter loaded
+2021-05-21T17:03:22.731Z - success: project-importer loaded
+2021-05-21T17:03:22.733Z - success: project-settings loaded
+2021-05-21T17:03:22.740Z - success: scene loaded
+2021-05-21T17:03:22.742Z - success: simulator-debugger loaded
+2021-05-21T17:03:22.744Z - success: sprite-editor loaded
+2021-05-21T17:03:22.747Z - success: store loaded
+2021-05-21T17:03:22.754Z - success: timeline loaded
+2021-05-21T17:03:22.761Z - success: xiaomi-runtime loaded
+2021-05-21T17:03:25.697Z - normal: Loading packages
+2021-05-21T17:03:25.707Z - normal: Watching packages
+2021-05-21T17:03:26.637Z - normal: Run Application
+2021-05-21T17:03:28.697Z - info: Cocos Services load base data!
+2021-05-21T17:13:52.198Z - failed: [db-task][sync-changes] Failed to import asset D:\Cocos\GalaxyReavers\assets\Script\Actor\Enemy2.js, message: Compile error: SyntaxError: D:/Cocos/GalaxyReavers/assets/Script/Actor/Enemy2.js: Unexpected token, expected , (32:4)
+  30 |     }
+  31 | 
+> 32 |     update (dt) {
+     |     ^
+  33 |         this.die();
+  34 |     },
+  35 | });
+    at Parser.pp$5.raise (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:4454:13)
+    at Parser.pp.unexpected (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:1761:8)
+    at Parser.pp.expect (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:1749:33)
+    at Parser.pp$3.parseObj (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3978:12)
+    at Parser.pp$3.parseExprAtom (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3719:19)
+    at Parser.pp$3.parseExprSubscripts (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3494:19)
+    at Parser.pp$3.parseMaybeUnary (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3474:19)
+    at Parser.pp$3.parseExprOps (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3404:19)
+    at Parser.pp$3.parseMaybeConditional (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3381:19)
+    at Parser.pp$3.parseMaybeAssign (C:\CocosCreator_2.1.3\resources\app.asar\node_modules\babylon\lib\index.js:3344:19)
+2021-05-21T17:18:03.435Z - info: Only the prefab node "enemy2" and its child nodes are saved.
+2021-05-21T17:22:29.067Z - info: Only the prefab node "enemy1" and its child nodes are saved.
+2021-05-21T17:22:29.277Z - info: Only the prefab node "enemy1" and its child nodes are saved.
+2021-05-21T17:32:49.535Z - info: shutdown preview server

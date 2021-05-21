@@ -27,10 +27,10 @@ cc.Class({
     attack: function attack() {
         var lastPos = this.node.y;
         cc.tween(this.node).to(this.attackSpeed, { y: -600 }).to(this.attackSpeed, { y: lastPos }).start();
+    },
+    update: function update(dt) {
+        this.die();
     }
-
-    // update (dt) {},
-
 });
 
 cc._RF.pop();

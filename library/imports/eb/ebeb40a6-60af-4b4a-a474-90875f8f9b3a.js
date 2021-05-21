@@ -23,6 +23,9 @@ cc.Class({
         if (other.node.group === 'player_bullet') {
             this._hitPoint -= other.node.getComponent('Bullet').damage;
         }
+        if (this._hitPoint <= 0) {
+            self.destroy();
+        }
     },
     die: function die() {
         var _this = this;

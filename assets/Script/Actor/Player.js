@@ -38,14 +38,10 @@ cc.Class({
                 this.node.getComponent(cc.Sprite).spriteFrame = this.explodeFx;
                 
             })
-            .delay(0.5)
-            .call(() => {
-                this.node.destroy();
-            })
-            .delay(0.5)
+            .delay(1)
             .call(() => {
                 this.loadScreenGameOver();
-                
+                this.node.destroy();
             })
             .start();
             

@@ -1,4 +1,4 @@
-const Enemy = require('Enemy')
+const Enemy = require('Enemy');
 cc.Class({
     extends: Enemy,
 
@@ -27,7 +27,9 @@ cc.Class({
             .to(this.attackSpeed, {y: -600})
             .to(this.attackSpeed, {y: lastPos})
             .start();
-    }
+    },
 
-    // update (dt) {},
+    update (dt) {
+        this.die();
+    },
 });

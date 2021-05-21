@@ -39,10 +39,9 @@ cc.Class({
 
         cc.tween(this.node).call(function () {
             _this.node.getComponent(cc.Sprite).spriteFrame = _this.explodeFx;
-        }).delay(0.5).call(function () {
-            _this.node.destroy();
-        }).delay(0.5).call(function () {
+        }).delay(1).call(function () {
             _this.loadScreenGameOver();
+            _this.node.destroy();
         }).start();
     },
     loadScreenGameOver: function loadScreenGameOver() {

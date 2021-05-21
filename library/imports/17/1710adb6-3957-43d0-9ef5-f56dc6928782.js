@@ -34,6 +34,10 @@ cc.Class({
                 this.level2Button.interactable = true;
                 this.level3Button.interactable = true;
                 break;
+            case 3:
+                this.level2Button.interactable = true;
+                this.level3Button.interactable = true;
+                break;
         };
         this.homeButton.node.on('click', this.goToHome.bind(this));
         this.hintButton.node.on('click', this.showHint, this);
