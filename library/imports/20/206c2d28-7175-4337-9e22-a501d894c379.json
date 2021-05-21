@@ -58,7 +58,7 @@
     "_position": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 474.227,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -191,6 +191,9 @@
     "_enabled": true,
     "maxHitPoint": 300,
     "_hitPoint": 0,
+    "explodeFx": {
+      "__uuid__": "2aebbd25-232d-4ca7-a13b-020bca26e614"
+    },
     "speed": {
       "__type__": "cc.Vec2",
       "x": 50,

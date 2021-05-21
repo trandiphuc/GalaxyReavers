@@ -37,17 +37,22 @@ cc.Class({
     die: function die() {
         var _this = this;
 
-        var level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
         cc.tween(this.node).call(function () {
             _this.node.getComponent(cc.Sprite).spriteFrame = _this.explodeFx;
-        }).delay(1).call(function () {
-            cc.director.loadScene("Menu", function () {
-                mEmitter.instance.emit('changeScreen', 'gameover');
-                var getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
-                getLevelScore.setLevel(level);
-            });
+        }).delay(0.5).call(function () {
             _this.node.destroy();
+        }).delay(0.5).call(function () {
+            _this.loadScreenGameOver();
         }).start();
+    },
+    loadScreenGameOver: function loadScreenGameOver() {
+        var level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
+        cc.director.loadScene("Menu", function () {
+            cc.log('1');
+            mEmitter.instance.emit('changeScreen', 'gameover');
+            var getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+            getLevelScore.setLevel(level);
+        });
     },
     update: function update(dt) {
         var currentPos = this.node.position;

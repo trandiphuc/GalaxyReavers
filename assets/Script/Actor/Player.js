@@ -32,24 +32,33 @@ cc.Class({
         }
     },
 
-    die() {
-        let level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
+    die() {  
         cc.tween(this.node)
             .call(() => {
                 this.node.getComponent(cc.Sprite).spriteFrame = this.explodeFx;
+                
             })
-            .delay(1)
+            .delay(0.5)
             .call(() => {
-                cc.director.loadScene("Menu", (() => {
-                    mEmitter.instance.emit('changeScreen', 'gameover');
-                    let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
-                    getLevelScore.setLevel(level);
-                }));
                 this.node.destroy();
             })
+            .delay(0.5)
+            .call(() => {
+                this.loadScreenGameOver();
+                
+            })
             .start();
+            
     },
-
+    loadScreenGameOver() {
+        let level = this.node.parent.getChildByName('WaveManager').getComponent('WaveMng').getLevelIndex();
+        cc.director.loadScene("Menu", (() => {
+            cc.log('1');
+            mEmitter.instance.emit('changeScreen', 'gameover');
+            let getLevelScore = cc.director.getScene().getChildByName('Canvas').getChildByName('GameOverNode').getComponent('GameOver');
+            getLevelScore.setLevel(level);
+        }));
+    },
     update(dt) {
         let currentPos = this.node.position;
         let delta = this._tmpPos.sub(currentPos);

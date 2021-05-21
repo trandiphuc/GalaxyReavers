@@ -18,7 +18,6 @@ cc.Class({
     },
     start: function start() {},
     update: function update(dt) {
-        this.die();
         var RADIUS = 45;
         var deltaSpeed = this.speed.mul(dt);
         this.node.position = this.node.position.addSelf(deltaSpeed);
@@ -30,6 +29,7 @@ cc.Class({
         if (posX - RADIUS < left || posX + RADIUS > right) {
             this.speed.negSelf();
         }
+        this.die();
     }
 });
 
