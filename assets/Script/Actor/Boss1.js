@@ -21,7 +21,6 @@ cc.Class({
         const RADIUS = 45;
         let deltaSpeed = this.speed.mul(dt);
         this.node.position = this.node.position.addSelf(deltaSpeed);
-
         let screenSize = cc.Canvas.instance.node.getContentSize();
         let right = screenSize.width >> 1;
         let left = -right;

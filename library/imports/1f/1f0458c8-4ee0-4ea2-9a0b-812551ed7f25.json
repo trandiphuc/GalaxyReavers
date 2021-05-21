@@ -151,7 +151,7 @@
     "bullet": {
       "__uuid__": "4c7ce409-7d33-454a-a533-4d9a646c171d"
     },
-    "interval": 0.5,
+    "interval": 0.2,
     "_id": ""
   },
   {
@@ -208,6 +208,7 @@
     },
     "_enabled": true,
     "maxSpeed": 1000,
+    "level": "",
     "_id": ""
   },
   {

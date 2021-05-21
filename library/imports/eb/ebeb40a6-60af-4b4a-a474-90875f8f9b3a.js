@@ -10,7 +10,8 @@ cc.Class({
 
     properties: {
         maxHitPoint: 0,
-        _hitPoint: 0
+        _hitPoint: 0,
+        explodeFx: cc.SpriteFrame
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -24,9 +25,15 @@ cc.Class({
         }
     },
     die: function die() {
+        var _this = this;
+
         if (this._hitPoint <= 0) {
-            Emitter.instance.emit('enemy_destroy');
-            this.node.destroy();
+            cc.tween(this.node).call(function () {
+                _this.node.getComponent(cc.Sprite).spriteFrame = _this.explodeFx;
+            }).delay(0.5).call(function () {
+                Emitter.instance.emit('enemy_destroy');
+                _this.node.destroy();
+            }).start();
         }
     },
     update: function update(dt) {

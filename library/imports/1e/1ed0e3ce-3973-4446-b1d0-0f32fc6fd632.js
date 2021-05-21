@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, '1ed0ePOOXNERrHQDzL8b9Yy', 'MainControllerMenu');
-// Script/MainControllerMenu.js
+// Script/Menu/MainControllerMenu.js
 
 'use strict';
 

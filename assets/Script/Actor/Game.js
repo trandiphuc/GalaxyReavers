@@ -13,7 +13,6 @@ cc.Class({
         Emitter.instance = new Emitter();
         let manager = cc.director.getCollisionManager();
         manager.enabled = true;
-        manager.enabledDebugDraw = true;
     },
     
     setIndex(value){

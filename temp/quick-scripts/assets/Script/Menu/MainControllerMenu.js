@@ -1,6 +1,6 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/Menu/MainControllerMenu.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
 cc._RF.push(module, '1ed0ePOOXNERrHQDzL8b9Yy', 'MainControllerMenu', __filename);
-// Script/MainControllerMenu.js
+// Script/Menu/MainControllerMenu.js
 
 'use strict';
 

@@ -4,6 +4,7 @@ cc.Class({
     extends: cc.Component,
 
     properties: {
+        finishedLevel: 0,
         homeButton: cc.Button,
         player: cc.Node,
         atlas: cc.SpriteAtlas,
@@ -15,11 +16,19 @@ cc.Class({
         offhintText: cc.Button,
         index: 0,
         level: 0,
-        isLockLv2: true,
-        isLockLv3: true,
     },
 
     onLoad() {
+        this.finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0);
+        cc.log(this.finishedLevel);
+        switch (this.finishedLevel) {
+            case 1: this.level2Button.interactable = true;
+                break;
+            case 2:
+                this.level2Button.interactable = true;
+                this.level3Button.interactable = true;
+                break;
+        };
         this.homeButton.node.on('click', this.goToHome.bind(this));
         this.hintButton.node.on('click', this.showHint, this);
         this.offhintText.node.on('click', this.offHint, this);
@@ -31,7 +40,7 @@ cc.Class({
                 cc.tween(this.hintButton.node)
                     .to(0.2, { angle: -20 })
                     .to(0.2, { angle: 20 })
-            )   
+            )
             .start()
     },
 
@@ -39,7 +48,7 @@ cc.Class({
         this.index = value;
     },
 
-    setIsBlock(value){
+    setIsBlock(value) {
         this.isLockLv2 = value;
     },
 
@@ -51,14 +60,14 @@ cc.Class({
         }));
     },
 
-    showHint(){
+    showHint() {
         this.hintText.runAction(cc.spawn(
             cc.moveTo(1, cc.v2(0, 0)),
             cc.scaleTo(1, 1)
         ));
     },
 
-    offHint(){
+    offHint() {
         this.hintText.runAction(cc.scaleTo(0.2, 1, 0));
     },
 
@@ -75,16 +84,11 @@ cc.Class({
             ),
             cc.rotateTo(1, 0)
         ));
-        
-        cc.director.loadScene('PlayGame', (()=>{
-            let getIndex = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getChildByName('WaveManager').getComponent('WaveMng');
-            getIndex.setLevelIndex(this.level);
-        }))
+        this.goToGame();
     },
 
     goToLevel2() {
         this.level = 2;
-        this.level2Button.interactable = false;
         this.player.runAction(cc.sequence(
             cc.rotateTo(0.5, 335),
             cc.spawn(
@@ -93,10 +97,7 @@ cc.Class({
             ),
             cc.rotateTo(1, 0)
         ));
-        cc.director.loadScene('PlayGame', (()=>{
-            let getIndex = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getChildByName('WaveManager').getComponent('WaveMng');
-            getIndex.setLevelIndex(this.level);
-        }))
+        this.goToGame();
     },
 
     goToLevel3() {
@@ -110,15 +111,17 @@ cc.Class({
             ),
             cc.rotateTo(1, 0)
         ));
+        this.goToGame();
     },
-
+    goToGame() {
+        cc.director.loadScene('PlayGame', (() => {
+            let getLevel = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getChildByName('WaveManager').getComponent('WaveMng');
+            getLevel.setLevelIndex(this.level);
+            let getIndex = cc.director.getScene().getChildByName('Canvas').getChildByName('Game').getComponent('Game');
+            getIndex.setIndex(this.index);
+        }))
+    },
     start() {
-        if(this.isLockLv2 === false){
-            this.level2Button.interactable = true;
-        }
-        if(this.isLockLv3 === false){
-            this.level3Button.interactable = true;
-        }
         this.player.getComponent(cc.Sprite).spriteFrame = this.atlas.getSpriteFrame('space' + this.index);
         this.player.y = 1000;
         cc.tween(this.player)
@@ -126,9 +129,6 @@ cc.Class({
             .to(2, { position: cc.v2(this.level1Button.node.x, this.level1Button.node.y) })
             .to(1.5, { angle: 360 })
             .delay(1)
-            .call(() => {
-                this.level1Button.interactable = true;
-            })
             .start();
     },
 

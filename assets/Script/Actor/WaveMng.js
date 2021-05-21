@@ -5,13 +5,14 @@ cc.Class({
     properties: {
         _levelIndex: 1,
         _content: null,
-        _waveIndex: 1,
+        _waveIndex: 0,
         _enemyCount: 0,
+        waveLabel: cc.Label,
+        levelLabel: cc.Label,
         enemy_prefab: {
             default: [],
             type: cc.Prefab
         },
-        isblock: true,
     },
 
     onLoad() {
@@ -22,7 +23,7 @@ cc.Class({
                 return;
             }
             this._content = object.json.level[this._levelIndex];
-            this.createFirstLevel();
+            this.createFirstLevel()
         }.bind(this));
     },
     getRandom(min, max) {
@@ -31,7 +32,11 @@ cc.Class({
 
     createFirstLevel() {
         this._waveIndex = 1;
-        this.createAWave();
+        this.waveLabel.node.active = true;
+        this.levelLabel.node.active = true;
+        this.waveLabel.string = 'wave ' + this._waveIndex;
+        this.levelLabel.string = 'level ' + this._levelIndex;
+        this.scheduleOnce(this.createAWave, 3);
     },
 
     setLevelIndex(value) {
@@ -43,6 +48,9 @@ cc.Class({
     },
 
     createAWave() {
+
+        this.levelLabel.node.active = false;
+        this.waveLabel.node.active = false;
         let lv = this._content[this._waveIndex].content.map(x => x);
         let lv_col = this._content[this._waveIndex].col;
         for (let i = 0; i < lv.length; i++) {
@@ -55,23 +63,52 @@ cc.Class({
                 newEnemy.getChildByName('weapon').getComponent('EnemyWeapon').interval = timeInterval;
                 let newX = (col * 100) - (100) * lv_col / 2 + 50;
                 let newY = 300 + (120 * row);
-                newEnemy.setPosition(newX, newY);
+                newEnemy.setPosition(0, 1000);
                 this.node.addChild(newEnemy);
+                cc.tween(newEnemy)
+                    .to(1, {x: newX, y: newY})
+                    .start();
             } else if (lv[i] == '2') {
                 this._enemyCount++;
                 let newEnemy = cc.instantiate(this.enemy_prefab[1]);
                 let newX = (col * 100) - (100) * lv_col / 2 + 50;
                 let newY = 300 + (120 * row);
-                newEnemy.setPosition(newX, newY);
+                newEnemy.setPosition(0, 1000);
                 this.node.addChild(newEnemy);
+                cc.tween(newEnemy)
+                .to(1, {x: newX, y: newY})
+                .start();
             }
             else if (lv[i] == '3') {
                 this._enemyCount++;
                 let newEnemy = cc.instantiate(this.enemy_prefab[2]);
                 let newX = 0;
                 let newY = 400;
-                newEnemy.setPosition(newX, newY);
+                newEnemy.setPosition(0, 1000);
                 this.node.addChild(newEnemy);
+                cc.tween(newEnemy)
+                .to(1, {x: newX, y: newY})
+                .start();
+            } else if (lv[i] == '4') {
+                this._enemyCount++;
+                let newEnemy = cc.instantiate(this.enemy_prefab[3]);
+                let newX = 0;
+                let newY = 400;
+                newEnemy.setPosition(0, 1000);
+                this.node.addChild(newEnemy);
+                cc.tween(newEnemy)
+                .to(1, {x: newX, y: newY})
+                .start();
+            } else if (lv[i] == '5') {
+                this._enemyCount++;
+                let newEnemy = cc.instantiate(this.enemy_prefab[4]);
+                let newX = 0;
+                let newY = 400;
+                newEnemy.setPosition(0, 1000);
+                this.node.addChild(newEnemy);
+                cc.tween(newEnemy)
+                .to(1, {x: newX, y: newY})
+                .start();
             }
         }
     },
@@ -79,13 +116,20 @@ cc.Class({
         this._enemyCount--;
         if (this._enemyCount == 0) {
             this._waveIndex++;
+            this.waveLabel.node.active = true;
+            this.waveLabel.string = "wave " + this._waveIndex;
             if (this._waveIndex <= this._content.num_wave) {
                 this.scheduleOnce(this.createAWave, 3);
             } else {
                 if (this._levelIndex === 3) {
-                    //To do TRanform Screen Win
+                    this.waveLabel.node.active = false;
+        
                 } else {
-                    this.isblock = false;
+                    this.waveLabel.node.active = false;
+                    let finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0)
+                    if(this._levelIndex > finishedLevel){
+                        cc.sys.localStorage.setItem("finishLevel", this._levelIndex);
+                    }
                     cc.director.loadScene('ChooseLevel', (() => {
                         let getBlock = cc.director.getScene().getChildByName('Canvas').getChildByName('Level').getComponent('ChooseLevel');
                         getBlock.setIsBlock(this.isblock);

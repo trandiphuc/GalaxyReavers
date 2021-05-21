@@ -2,7 +2,7 @@
 cc._RF.push(module, '209c4AKTWxHfaWL8v0VvklG', 'GameOver', __filename);
 // Script/Menu/GameOver.js
 
-"use strict";
+'use strict';
 
 var mEmitter = require("Emitter");
 
@@ -15,7 +15,7 @@ cc.Class({
         levelLabel: cc.Label,
         waveLabel: cc.Label,
         replayButton: cc.Button,
-        level: "",
+        level: 0,
         wave: 0
     },
 

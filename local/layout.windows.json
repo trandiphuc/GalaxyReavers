@@ -7,8 +7,8 @@
       "windowType": "dockable",
       "x": 0,
       "y": 0,
-      "width": 1680,
-      "height": 1050,
+      "width": 1366,
+      "height": 728,
       "layout": {
         "children": [
           {
@@ -18,23 +18,23 @@
                 "children": [
                   "hierarchy"
                 ],
-                "height": 405.21875,
+                "height": 289,
                 "type": "panel",
-                "width": 268
+                "width": 215
               },
               {
                 "active": 0,
                 "children": [
                   "assets"
                 ],
-                "height": 444.78125,
+                "height": 318,
                 "type": "panel",
-                "width": 268
+                "width": 215
               }
             ],
-            "height": 852,
+            "height": 609,
             "type": "dock-v",
-            "width": 268
+            "width": 215
           },
           {
             "children": [
@@ -43,9 +43,9 @@
                 "children": [
                   "scene"
                 ],
-                "height": 444.78125,
+                "height": 318,
                 "type": "panel",
-                "width": 1009
+                "width": 811
               },
               {
                 "active": 0,
@@ -54,14 +54,14 @@
                   "timeline",
                   "game-window"
                 ],
-                "height": 405.21875,
+                "height": 289,
                 "type": "panel",
-                "width": 1009
+                "width": 811
               }
             ],
-            "height": 852,
+            "height": 609,
             "type": "dock-v",
-            "width": 1009
+            "width": 811
           },
           {
             "active": 0,
@@ -69,9 +69,9 @@
               "inspector",
               "cocos-services"
             ],
-            "height": 852,
+            "height": 609,
             "type": "panel",
-            "width": 399
+            "width": 320
           }
         ],
         "type": "dock-h"

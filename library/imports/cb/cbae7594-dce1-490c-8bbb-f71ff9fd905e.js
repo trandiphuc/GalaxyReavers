@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'cbae7WU3OFJDIu79x/5/ZBe', 'Home');
-// Script/Home.js
+// Script/Menu/Home.js
 
 'use strict';
 
@@ -62,7 +62,9 @@ cc.Class({
         }, 3000);
     },
     start: function start() {},
-    update: function update(dt) {}
+    update: function update(dt) {
+        this.goButton.node.angle += 200 * dt;
+    }
 });
 
 cc._RF.pop();

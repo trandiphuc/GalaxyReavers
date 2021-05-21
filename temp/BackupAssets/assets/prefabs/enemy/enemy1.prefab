@@ -206,6 +206,9 @@
     "_enabled": true,
     "maxHitPoint": 20,
     "_hitPoint": 0,
+    "explodeFx": {
+      "__uuid__": "2e723ca0-d12a-4a55-b236-f787793b83af"
+    },
     "_id": ""
   },
   {

@@ -9,7 +9,7 @@ cc.Class({
         levelLabel: cc.Label,
         waveLabel: cc.Label,
         replayButton: cc.Button,
-        level: "",
+        level: 0,
         wave: 0,
     },
 

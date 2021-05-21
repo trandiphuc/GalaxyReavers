@@ -7,17 +7,19 @@ cc.Class({
 
     // LIFE-CYCLE CALLBACKS:
 
-    // onLoad () {},
+    onLoad () {
+        this._hitPoint = this.maxHitPoint;
+    },
 
     start () {
 
     },
 
     update (dt) {
+        this.die();
         const RADIUS = 45;
-        let deltaSpeed = this.speed.mul(dt);
+        let deltaSpeed = this.speed.mul(dt) ;
         this.node.position = this.node.position.addSelf(deltaSpeed);
-
         let screenSize = cc.Canvas.instance.node.getContentSize();
         let right = screenSize.width >> 1;
         let left = -right;

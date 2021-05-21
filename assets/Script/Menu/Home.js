@@ -68,6 +68,6 @@ cc.Class({
     },
 
     update(dt) {
-        
+        this.goButton.node.angle += 200 * dt;
     },
 });

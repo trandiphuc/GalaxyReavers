@@ -17,7 +17,7 @@
         "__id__": 2
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 0,
     "_components": [],
     "_prefab": null,
@@ -78,10 +78,10 @@
     "_level": 1,
     "_components": [
       {
-        "__id__": 155
+        "__id__": 151
       },
       {
-        "__id__": 156
+        "__id__": 152
       }
     ],
     "_prefab": null,
@@ -165,7 +165,7 @@
       "__type__": "cc.Vec3",
       "x": 0,
       "y": 0,
-      "z": 407.0319397786862
+      "z": 242.48711305964284
     },
     "_scale": {
       "__type__": "cc.Vec3",
@@ -244,7 +244,7 @@
         "__id__": 43
       }
     ],
-    "_active": false,
+    "_active": true,
     "_level": 2,
     "_components": [
       {
@@ -5937,19 +5937,16 @@
       },
       {
         "__id__": 144
-      },
-      {
-        "__id__": 148
       }
     ],
-    "_active": true,
+    "_active": false,
     "_level": 2,
     "_components": [
       {
-        "__id__": 153
+        "__id__": 149
       },
       {
-        "__id__": 154
+        "__id__": 150
       }
     ],
     "_prefab": null,
@@ -6651,7 +6648,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "Wave",
+    "_name": "Replay",
     "_objFlags": 0,
     "_parent": {
       "__id__": 129
@@ -6665,191 +6662,7 @@
     "_level": 3,
     "_components": [
       {
-        "__id__": 147
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 150,
-      "height": 150
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": -5.401,
-      "y": -48.776,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "e0UehImddMMZcOGTBzKtHI"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "wave",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 144
-    },
-    "_children": [],
-    "_active": true,
-    "_level": 4,
-    "_components": [
-      {
-        "__id__": 146
-      }
-    ],
-    "_prefab": null,
-    "_opacity": 255,
-    "_color": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
-    },
-    "_contentSize": {
-      "__type__": "cc.Size",
-      "width": 120,
-      "height": 50.4
-    },
-    "_anchorPoint": {
-      "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
-    },
-    "_position": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_scale": {
-      "__type__": "cc.Vec3",
-      "x": 1,
-      "y": 1,
-      "z": 1
-    },
-    "_eulerAngles": {
-      "__type__": "cc.Vec3",
-      "x": 0,
-      "y": 0,
-      "z": 0
-    },
-    "_skewX": 0,
-    "_skewY": 0,
-    "_is3DNode": false,
-    "groupIndex": 0,
-    "_id": "85+IKEpphPUY63lRI1d14k"
-  },
-  {
-    "__type__": "cc.Label",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 145
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_useOriginalSize": false,
-    "_string": "0",
-    "_N$string": "0",
-    "_fontSize": 40,
-    "_lineHeight": 40,
-    "_enableWrapText": true,
-    "_N$file": {
-      "__uuid__": "512f37d9-8290-4013-9ece-585167a3901a"
-    },
-    "_isSystemFontUsed": false,
-    "_spacingX": 0,
-    "_batchAsBitmap": false,
-    "_N$horizontalAlign": 1,
-    "_N$verticalAlign": 1,
-    "_N$fontFamily": "Arial",
-    "_N$overflow": 3,
-    "_N$cacheMode": 0,
-    "_id": "04Iiu6vbtAyKemJXOAt41M"
-  },
-  {
-    "__type__": "cc.Sprite",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 144
-    },
-    "_enabled": true,
-    "_materials": [
-      {
-        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
-      }
-    ],
-    "_srcBlendFactor": 770,
-    "_dstBlendFactor": 771,
-    "_spriteFrame": {
-      "__uuid__": "1fecd548-8f3b-41b2-9ddf-2c86ee608db0"
-    },
-    "_type": 0,
-    "_sizeMode": 0,
-    "_fillType": 0,
-    "_fillCenter": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_fillStart": 0,
-    "_fillRange": 0,
-    "_isTrimmedMode": true,
-    "_atlas": null,
-    "_id": "254lWWPF5MdZ0G+uwchB3Q"
-  },
-  {
-    "__type__": "cc.Node",
-    "_name": "Replay",
-    "_objFlags": 0,
-    "_parent": {
-      "__id__": 129
-    },
-    "_children": [
-      {
-        "__id__": 149
-      }
-    ],
-    "_active": true,
-    "_level": 3,
-    "_components": [
-      {
-        "__id__": 152
+        "__id__": 148
       }
     ],
     "_prefab": null,
@@ -6900,17 +6713,17 @@
     "_name": "Background",
     "_objFlags": 0,
     "_parent": {
-      "__id__": 148
+      "__id__": 144
     },
     "_children": [],
     "_active": true,
     "_level": 2,
     "_components": [
       {
-        "__id__": 150
+        "__id__": 146
       },
       {
-        "__id__": 151
+        "__id__": 147
       }
     ],
     "_prefab": null,
@@ -6961,7 +6774,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 149
+      "__id__": 145
     },
     "_enabled": true,
     "_materials": [
@@ -6993,7 +6806,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 149
+      "__id__": 145
     },
     "_enabled": true,
     "alignMode": 0,
@@ -7020,7 +6833,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 148
+      "__id__": 144
     },
     "_enabled": true,
     "duration": 0.1,
@@ -7089,7 +6902,7 @@
       "__uuid__": "29158224-f8dd-4661-a796-1ffab537140e"
     },
     "_N$target": {
-      "__id__": 149
+      "__id__": 145
     },
     "_id": "bbMrArO65MDZivWJ7MMyqp"
   },
@@ -7137,11 +6950,9 @@
     "levelLabel": {
       "__id__": 142
     },
-    "waveLabel": {
-      "__id__": 146
-    },
+    "waveLabel": null,
     "replayButton": {
-      "__id__": 152
+      "__id__": 148
     },
     "level": "",
     "wave": 0,

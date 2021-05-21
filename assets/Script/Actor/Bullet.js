@@ -7,10 +7,10 @@ cc.Class({
             default: cc.Vec2.ZERO
         },
         damage: 0,
-        // sound: {
-        //     default: null,
-        //     url: cc.AudioClip
-        // }
+        sound: {
+            default: null,
+            url: cc.AudioClip
+        }
     },
 
     // LIFE-CYCLE CALLBACKS:
@@ -22,7 +22,7 @@ cc.Class({
     },
 
     onEnable() {
-        //cc.audioEngine.playEffect(this.sound, false);
+        cc.audioEngine.playEffect(this.sound, false);
     },
 
     onCollisionEnter(other, self) {

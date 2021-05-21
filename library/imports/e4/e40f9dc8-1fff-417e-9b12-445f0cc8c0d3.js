@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'e40f93IH/9BfpsSRF8MyMDT', 'Hint');
-// Script/Hint.js
+// Script/ChooseLevel/Hint.js
 
 'use strict';
 

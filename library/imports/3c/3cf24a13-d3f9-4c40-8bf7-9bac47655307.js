@@ -11,13 +11,14 @@ cc.Class({
     properties: {
         _levelIndex: 1,
         _content: null,
-        _waveIndex: 1,
+        _waveIndex: 0,
         _enemyCount: 0,
+        waveLabel: cc.Label,
+        levelLabel: cc.Label,
         enemy_prefab: {
             default: [],
             type: cc.Prefab
-        },
-        isblock: true
+        }
     },
 
     onLoad: function onLoad() {
@@ -36,7 +37,11 @@ cc.Class({
     },
     createFirstLevel: function createFirstLevel() {
         this._waveIndex = 1;
-        this.createAWave();
+        this.waveLabel.node.active = true;
+        this.levelLabel.node.active = true;
+        this.waveLabel.string = 'wave ' + this._waveIndex;
+        this.levelLabel.string = 'level ' + this._levelIndex;
+        this.scheduleOnce(this.createAWave, 3);
     },
     setLevelIndex: function setLevelIndex(value) {
         this._levelIndex = value;
@@ -45,6 +50,9 @@ cc.Class({
         return this._levelIndex;
     },
     createAWave: function createAWave() {
+
+        this.levelLabel.node.active = false;
+        this.waveLabel.node.active = false;
         var lv = this._content[this._waveIndex].content.map(function (x) {
             return x;
         });
@@ -59,22 +67,41 @@ cc.Class({
                 newEnemy.getChildByName('weapon').getComponent('EnemyWeapon').interval = timeInterval;
                 var newX = col * 100 - 100 * lv_col / 2 + 50;
                 var newY = 300 + 120 * row;
-                newEnemy.setPosition(newX, newY);
+                newEnemy.setPosition(0, 1000);
                 this.node.addChild(newEnemy);
+                cc.tween(newEnemy).to(1, { x: newX, y: newY }).start();
             } else if (lv[i] == '2') {
                 this._enemyCount++;
                 var _newEnemy = cc.instantiate(this.enemy_prefab[1]);
                 var _newX = col * 100 - 100 * lv_col / 2 + 50;
                 var _newY = 300 + 120 * row;
-                _newEnemy.setPosition(_newX, _newY);
+                _newEnemy.setPosition(0, 1000);
                 this.node.addChild(_newEnemy);
+                cc.tween(_newEnemy).to(1, { x: _newX, y: _newY }).start();
             } else if (lv[i] == '3') {
                 this._enemyCount++;
                 var _newEnemy2 = cc.instantiate(this.enemy_prefab[2]);
                 var _newX2 = 0;
                 var _newY2 = 400;
-                _newEnemy2.setPosition(_newX2, _newY2);
+                _newEnemy2.setPosition(0, 1000);
                 this.node.addChild(_newEnemy2);
+                cc.tween(_newEnemy2).to(1, { x: _newX2, y: _newY2 }).start();
+            } else if (lv[i] == '4') {
+                this._enemyCount++;
+                var _newEnemy3 = cc.instantiate(this.enemy_prefab[3]);
+                var _newX3 = 0;
+                var _newY3 = 400;
+                _newEnemy3.setPosition(0, 1000);
+                this.node.addChild(_newEnemy3);
+                cc.tween(_newEnemy3).to(1, { x: _newX3, y: _newY3 }).start();
+            } else if (lv[i] == '5') {
+                this._enemyCount++;
+                var _newEnemy4 = cc.instantiate(this.enemy_prefab[4]);
+                var _newX4 = 0;
+                var _newY4 = 400;
+                _newEnemy4.setPosition(0, 1000);
+                this.node.addChild(_newEnemy4);
+                cc.tween(_newEnemy4).to(1, { x: _newX4, y: _newY4 }).start();
             }
         }
     },
@@ -84,13 +111,19 @@ cc.Class({
         this._enemyCount--;
         if (this._enemyCount == 0) {
             this._waveIndex++;
+            this.waveLabel.node.active = true;
+            this.waveLabel.string = "wave " + this._waveIndex;
             if (this._waveIndex <= this._content.num_wave) {
                 this.scheduleOnce(this.createAWave, 3);
             } else {
                 if (this._levelIndex === 3) {
-                    //To do TRanform Screen Win
+                    this.waveLabel.node.active = false;
                 } else {
-                    this.isblock = false;
+                    this.waveLabel.node.active = false;
+                    var finishedLevel = parseInt(cc.sys.localStorage.getItem("finishLevel") || 0);
+                    if (this._levelIndex > finishedLevel) {
+                        cc.sys.localStorage.setItem("finishLevel", this._levelIndex);
+                    }
                     cc.director.loadScene('ChooseLevel', function () {
                         var getBlock = cc.director.getScene().getChildByName('Canvas').getChildByName('Level').getComponent('ChooseLevel');
                         getBlock.setIsBlock(_this.isblock);

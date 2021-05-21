@@ -1,6 +1,6 @@
 (function() {"use strict";var __module = CC_EDITOR ? module : {exports:{}};var __filename = 'preview-scripts/assets/Script/Menu/Home.js';var __require = CC_EDITOR ? function (request) {return cc.require(request, require);} : function (request) {return cc.require(request, __filename);};function __define (exports, require, module) {"use strict";
 cc._RF.push(module, 'cbae7WU3OFJDIu79x/5/ZBe', 'Home', __filename);
-// Script/Home.js
+// Script/Menu/Home.js
 
 'use strict';
 
@@ -62,7 +62,9 @@ cc.Class({
         }, 3000);
     },
     start: function start() {},
-    update: function update(dt) {}
+    update: function update(dt) {
+        this.goButton.node.angle += 200 * dt;
+    }
 });
 
 cc._RF.pop();

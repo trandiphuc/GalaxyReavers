@@ -1,6 +1,6 @@
 "use strict";
 cc._RF.push(module, 'a70ecmAHFZOHKhNHw3tIz2f', 'Intent');
-// Script/Intent.js
+// Script/Menu/Intent.js
 
 'use strict';
 

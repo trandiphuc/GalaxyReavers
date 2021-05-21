@@ -18,30 +18,33 @@
     "_parent": null,
     "_children": [],
     "_active": true,
-    "_level": 4,
+    "_level": 1,
     "_components": [
       {
         "__id__": 2
       },
       {
         "__id__": 3
+      },
+      {
+        "__id__": 4
       }
     ],
     "_prefab": {
-      "__id__": 4
+      "__id__": 5
     },
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
+      "r": 10,
       "g": 255,
-      "b": 255,
+      "b": 0,
       "a": 255
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 418,
-      "height": 473
+      "width": 351,
+      "height": 408
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -50,8 +53,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": -199.674,
-      "y": 260.289,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_scale": {
@@ -80,13 +83,13 @@
       "__id__": 1
     },
     "_enabled": true,
-    "maxHitPoint": 300,
+    "maxHitPoint": 600,
     "_hitPoint": 0,
-    "interval": 2,
-    "attackSpeed": 0.5,
+    "interval": 3,
+    "attackSpeed": 2,
     "speed": {
       "__type__": "cc.Vec2",
-      "x": 50,
+      "x": 100,
       "y": 0
     },
     "_id": ""
@@ -107,7 +110,7 @@
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
     "_spriteFrame": {
-      "__uuid__": "8b36a87e-55f7-4d84-a126-b76537a329ef"
+      "__uuid__": "e48ed7f6-34fb-4b17-abf4-ae131504d50a"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -124,12 +127,29 @@
     "_id": ""
   },
   {
+    "__type__": "cc.CircleCollider",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "tag": 0,
+    "_offset": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_radius": 150,
+    "_id": ""
+  },
+  {
     "__type__": "cc.PrefabInfo",
     "root": {
       "__id__": 1
     },
     "asset": {
-      "__id__": 0
+      "__uuid__": "87587be1-f500-45e2-b17b-cdb472e8fe17"
     },
     "fileId": "99Jr4qOzRHepAaXMbiu9Gr",
     "sync": false

@@ -19,7 +19,6 @@ cc.Class({
         Emitter.instance = new Emitter();
         var manager = cc.director.getCollisionManager();
         manager.enabled = true;
-        manager.enabledDebugDraw = true;
     },
     setIndex: function setIndex(value) {
         this.index = value;
