@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "logoGalaxy",
+    "texture": "7c24fe90-5c51-444e-a8d7-12040956fae1",
+    "atlas": "",
+    "rect": [
+      34,
+      32,
+      436,
+      192
+    ],
+    "offset": [
+      -4,
+      2.5
+    ],
+    "originalSize": [
+      512,
+      261
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

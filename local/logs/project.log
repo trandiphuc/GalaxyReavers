@@ -1,0 +1,70 @@
+2021-05-21T06:27:29.239Z - normal: Load ~/.CocosCreator/settings.json
+2021-05-21T06:27:29.276Z - normal: Initializing Asset Database
+2021-05-21T06:27:29.277Z - normal: checking language setting...
+2021-05-21T06:27:29.277Z - normal: Language: en
+2021-05-21T06:27:29.711Z - success: preview server running at http://localhost:7456
+2021-05-21T06:27:29.723Z - success: protocol editor-framework registered
+2021-05-21T06:27:29.723Z - success: protocol app registered
+2021-05-21T06:27:29.723Z - success: protocol theme registered
+2021-05-21T06:27:29.723Z - success: protocol packages registered
+2021-05-21T06:27:29.724Z - success: protocol uuid registerred
+2021-05-21T06:27:29.724Z - success: protocol db registerred
+2021-05-21T06:27:29.724Z - success: protocol thumbnail registerred
+2021-05-21T06:27:29.724Z - success: protocol unpack registerred
+2021-05-21T06:27:29.724Z - success: protocol disable-commonjs registerred
+2021-05-21T06:27:30.938Z - normal: connected!
+2021-05-21T06:27:30.939Z - normal: Check project /Users/gemi/Desktop/cocos-game/ShootingFly
+2021-05-21T06:27:30.940Z - normal: Initializing project /Users/gemi/Desktop/cocos-game/ShootingFly
+2021-05-21T06:27:31.227Z - normal: Initializing Cocos2d
+2021-05-21T06:27:31.702Z - normal: Initializing engine extends
+2021-05-21T06:27:31.719Z - success: alipay-adapter loaded
+2021-05-21T06:27:31.726Z - success: asset-db-debugger loaded
+2021-05-21T06:27:31.730Z - success: baidu-adapter loaded
+2021-05-21T06:27:31.733Z - success: color-picker loaded
+2021-05-21T06:27:31.825Z - success: fb-audience-network loaded
+2021-05-21T06:27:31.871Z - success: fb-live-stream loaded
+2021-05-21T06:27:31.873Z - success: google-play-instant loaded
+2021-05-21T06:27:31.876Z - success: huawei-runtime loaded
+2021-05-21T06:27:32.021Z - success: cpk-publish loaded
+2021-05-21T06:27:32.022Z - success: jsb-adapter loaded
+2021-05-21T06:27:32.025Z - success: oppo-runtime loaded
+2021-05-21T06:27:32.028Z - success: package-manager loaded
+2021-05-21T06:27:32.114Z - success: qqplay-adapter loaded
+2021-05-21T06:27:32.115Z - success: runtime-dev-tools loaded
+2021-05-21T06:27:32.119Z - success: sdkbox loaded
+2021-05-21T06:27:32.122Z - success: tester loaded
+2021-05-21T06:27:32.124Z - success: ui-kit-preview-extra loaded
+2021-05-21T06:27:32.126Z - success: ui-kit-preview loaded
+2021-05-21T06:27:32.129Z - success: ui-kit loaded
+2021-05-21T06:27:32.133Z - success: vivo-runtime loaded
+2021-05-21T06:27:32.134Z - success: weapp-adapter loaded
+2021-05-21T06:27:32.134Z - success: xiaomi-adapter loaded
+2021-05-21T06:27:32.136Z - success: alipay-minigame loaded
+2021-05-21T06:27:32.170Z - success: assets loaded
+2021-05-21T06:27:32.173Z - success: builder loaded
+2021-05-21T06:27:32.363Z - success: cocos-services loaded
+2021-05-21T06:27:32.368Z - success: console loaded
+2021-05-21T06:27:32.393Z - success: fb-instant-games loaded
+2021-05-21T06:27:32.396Z - success: game-window loaded
+2021-05-21T06:27:32.397Z - success: google-instant-games loaded
+2021-05-21T06:27:32.402Z - success: hierarchy loaded
+2021-05-21T06:27:32.405Z - success: inspector loaded
+2021-05-21T06:27:32.406Z - success: keystore loaded
+2021-05-21T06:27:32.410Z - success: node-library loaded
+2021-05-21T06:27:32.411Z - success: package-asset loaded
+2021-05-21T06:27:32.411Z - success: preferences loaded
+2021-05-21T06:27:32.414Z - success: project-exporter loaded
+2021-05-21T06:27:32.419Z - success: project-importer loaded
+2021-05-21T06:27:32.423Z - success: project-settings loaded
+2021-05-21T06:27:32.426Z - success: scene loaded
+2021-05-21T06:27:32.427Z - success: simulator-debugger loaded
+2021-05-21T06:27:32.428Z - success: sprite-editor loaded
+2021-05-21T06:27:32.431Z - success: store loaded
+2021-05-21T06:27:32.437Z - success: timeline loaded
+2021-05-21T06:27:32.440Z - success: xiaomi-runtime loaded
+2021-05-21T06:27:36.274Z - info: Cocos Services load base data!
+2021-05-21T06:27:36.784Z - normal: Loading packages
+2021-05-21T06:27:36.789Z - normal: Watching packages
+2021-05-21T06:27:36.873Z - normal: Run Application
+2021-05-21T06:37:40.850Z - info: Only the prefab node "enemy2" and its child nodes are saved.
+2021-05-21T06:37:45.912Z - info: Only the prefab node "enemy2" and its child nodes are saved.

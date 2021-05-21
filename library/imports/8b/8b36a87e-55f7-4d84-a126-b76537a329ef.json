@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "lazeSpace",
+    "texture": "a106fa57-dbd9-40b7-a8cf-0fad4a0ac25c",
+    "atlas": "",
+    "rect": [
+      21,
+      22,
+      418,
+      473
+    ],
+    "offset": [
+      0,
+      12.5
+    ],
+    "originalSize": [
+      460,
+      542
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

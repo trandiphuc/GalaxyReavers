@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "redSpace",
+    "texture": "8bece8bb-39d3-40f1-b919-7fef7f51afc1",
+    "atlas": "",
+    "rect": [
+      53,
+      46,
+      394,
+      420
+    ],
+    "offset": [
+      0,
+      -6.5
+    ],
+    "originalSize": [
+      500,
+      499
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

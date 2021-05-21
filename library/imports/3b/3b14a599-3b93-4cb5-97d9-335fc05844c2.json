@@ -1,0 +1,28 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "blueSpace",
+    "texture": "ab9079f1-3bc6-4ebe-b08d-73b09940facf",
+    "atlas": "",
+    "rect": [
+      31,
+      33,
+      438,
+      451
+    ],
+    "offset": [
+      0,
+      -8.5
+    ],
+    "originalSize": [
+      500,
+      500
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}
